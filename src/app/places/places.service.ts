@@ -29,7 +29,7 @@ export class PlacesService {
   }
 
   fetchPlaces() {
-   return this.http.get<{[key: string]: PlaceData}>('https://ionic-angular-course-44af6-default-rtdb.firebaseio.com/offered-places.json').pipe(
+   return this.http.get<{[key: string]: PlaceData}>('https://ionic-angular-course').pipe(
       map(resData => {
         console.log('res ', resData);
         const places = [];
